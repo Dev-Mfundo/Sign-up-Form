@@ -1,0 +1,177 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #f1f8f7;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main section {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+.wallpaper {
+    background-image: url('./media/background/hi-estudio-2mk8YiGJKJ0-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.branding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.branding img {
+    width: 90px;
+    height: 90px;
+}
+
+.branding h1 {
+    font-size: 4rem;
+    color: #ffffff;
+    font-family: 'Lobster', cursive;
+}
+
+footer {
+    text-align: center;
+    color: #ffffff;
+    font-size: 0.9rem;
+    padding: 10px 0;
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.aside article {
+    margin-top: 10%;
+}
+
+.aside article p {
+    font-size: 1.3rem;
+    color: #333333;
+}
+
+form fieldset {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    border: none;
+    padding: 0;
+}
+
+form fieldset legend {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+form fieldset label {
+    display: block;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus {
+    border-color: #596D48;
+    box-shadow: 0 0 5px rgba(89, 109, 72, 0.5);
+    outline: none;
+}
+
+form input:valid {
+    border-color: #28A745;
+}
+
+form input:invalid {
+    border-color: #DC3545;
+}
+
+.create-account {
+    background-color: #596D48;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.create-account:hover {
+    background-color: #4e5e41;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+.login-link a {
+    color: #596D48;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    main section {
+        flex-direction: column;
+    }
+
+    .wallpaper, .aside {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .branding {
+        margin-top: 20%;
+    }
+
+    .branding h1 {
+        font-size: 3rem;
+    }
+
+    .aside article {
+        margin-top: 5%;
+    }
+
+    form fieldset {
+        grid-template-columns: 1fr;
+    }
+
+    .create-account {
+        font-size: 0.9rem;
+    }
+}
